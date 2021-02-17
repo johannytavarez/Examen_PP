@@ -26,8 +26,8 @@ namespace examen_primer_parcial
                     C500 = 0;
                     C200 = 0;
                     C100 = 0;
-                    
-                
+
+
                     CAN = efectivo_a_retirar;
                     if( (CAN >= 1000) )
                     {
@@ -51,21 +51,21 @@ namespace examen_primer_parcial
                     C100 = (CAN / 100);
                     CAN = CAN - (C100 * 100);
                     }
-                
+
                     Console.WriteLine("BILLETES DE A 1000: "+ C1000);
                     Console.WriteLine("BILLETES DE A 500 : " + C500);
                     Console.WriteLine("BILLETES DE A 200 : " + C200);
                     Console.WriteLine("BILLETES DE A 100 : " + C100);
-                
+
 
                 }
 
 
-                
+
                 else {
                      Console.WriteLine("El monto que ha ingresado excede el limite");
                 }
-               
+
 
 
            }
@@ -81,16 +81,16 @@ namespace examen_primer_parcial
                     C500 = 0;
                     C200 = 0;
                     C100 = 0;
-                    
-                   
-                  
+
+
+
                     CAN = efectivo_a_retirar;
                     if( (CAN >= 1000) )
                     {
                     C1000 = (CAN / 1000);
-                        //while (C1000<= 18) {
-                        CAN = CAN - (C1000 * 1000);
-                        //}
+                    
+                    CAN = CAN - (C1000 * 1000);
+                    
                     }
                     if( (CAN >= 500) )
                     {
@@ -107,17 +107,17 @@ namespace examen_primer_parcial
                     C100 = (CAN / 100);
                     CAN = CAN - (C100 * 100);
                     }
-                
+                    Console.WriteLine("Usted recibira:");
                     Console.WriteLine("BILLETES DE A 1000: "+ C1000);
                     Console.WriteLine("BILLETES DE A 500 : " + C500);
                     Console.WriteLine("BILLETES DE A 200 : " + C200);
                     Console.WriteLine("BILLETES DE A 100 : " + C100);
-                
+
 
                 }
 
 
-                
+
                 else {
                      Console.WriteLine("El monto que ha ingresado excede el limite");
                 }
@@ -125,13 +125,13 @@ namespace examen_primer_parcial
 
            }
 
-            Console.Write("Fin de la transaccion"); 
-            Console.Write("Pulse una Tecla:"); Console.ReadLine();
+            Console.WriteLine("Fin de la transaccion"); 
+            Console.Write("Pulse una tecla para salir:"); Console.ReadLine();
 
 
 
 
-            
+
         }
     }
-}
+} 
